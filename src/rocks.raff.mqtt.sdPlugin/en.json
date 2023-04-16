@@ -1,0 +1,20 @@
+{
+  "Description": "Stream Deck Tuneblade Plugin",
+  "Name": "Stream Deck Tuneblade Plugin",
+  "Category": "Tuneblade",
+  "rocks.raff.mqtt.sdPlugin.action": {
+    "Name": "Enable/disable receiver",
+    "Tooltip": "Enable/disable streaming to AirPlay receiver"
+  },
+  "Localization": {
+    "More info": "More info",
+    "Message": "Message",
+    "Click Me": "Click Me",
+    "Button": "Button",
+    "More": "More",
+    "My name": "My name",
+    "My title": "My title",
+    "My message": "My message",
+    "My button": "My button"
+  }
+}

@@ -1,0 +1,56 @@
+{
+	"SDKVersion": 2,
+	"Author": "Hobbyquaker",
+	"CodePath": "app.html",
+	"Description": "Publish MQTT Messages and set titles, images and states with MQTT subscriptions",
+	"Name": "Stream Deck MQTT Plugin",
+	"Icon": "assets/mqtt_plugin",
+	"URL": "https://github.com/hobbyquaker/streamdeck-plugin-mqtt",
+	"Version": "1.0.0",
+	"Software": {
+		"MinimumVersion": "5.0"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.11"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Category": "MQTT",
+	"CategoryIcon": "assets/mqtt_category",
+	"Actions": [
+		{
+			"Icon": "actions/simple/assets/simple_action",
+			"Name": "Simple",
+			"Controllers": ["Keypad"],
+			"States": [
+				{
+					"Image": "actions/simple/assets/simple"
+				}
+			],
+			"Tooltip": "",
+			"UUID": "rocks.raff.mqtt.simple.action",
+			"PropertyInspectorPath": "actions/simple/property-inspector/inspector.html"
+		},
+		{
+			"Icon": "actions/simple/assets/simple_action",
+			"Name": "Toggle",
+			"Controllers": ["Keypad"],
+			"States": [
+				{
+					"Image": "actions/toggle/assets/toggle_off"
+				},
+				{
+					"Image": "actions/toggle/assets/toggle_on"
+				}
+			],
+			"Tooltip": "",
+			"UUID": "rocks.raff.mqtt.toggle.action",
+			"PropertyInspectorPath": "actions/toggle/property-inspector/inspector.html"
+		}
+	]
+}

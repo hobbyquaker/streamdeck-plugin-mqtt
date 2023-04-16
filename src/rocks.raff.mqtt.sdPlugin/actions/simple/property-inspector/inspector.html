@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>rocks.raff.mqtt.sdPlugin Property Inspector</title>
+    <link rel="stylesheet" href="../../../libs/css/sdpi.css" />
+</head>
+
+<body>
+    <div class="sdpi-wrapper">
+        <form id="property-inspector">
+
+            <div class="sdpi-heading" data-localize>Publish settings</div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" data-localize>Topic</div>
+                <input class="sdpi-item-value" name="topic" placeholder="">
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" data-localize>Payload</div>
+                <input class="sdpi-item-value" name="payload" placeholder="">
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" data-localize>Retain</div>
+                <select class="sdpi-item-value select" name="retain">
+                    <option value="false" data-localize="No">No</option>
+                    <option value="true" data-localize="Yes">Yes</option>
+                </select>
+            </div>
+
+            <div class="sdpi-heading" data-localize>Title subscribe settings</div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" data-localize>Topic</div>
+                <input class="sdpi-item-value" name="topicTitle" placeholder="">
+            </div>
+
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" data-localize>JSON Path</div>
+                <input class="sdpi-item-value" name="pathTitle" placeholder="">
+            </div>
+
+            <div class="sdpi-heading" data-localize>Image subscribe settings</div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" data-localize>Topic</div>
+                <input class="sdpi-item-value" name="topicImage" placeholder="">
+            </div>
+        </form>
+
+        <form id="property-inspector-global">
+            <div class="sdpi-heading" data-localize>MQTT Settings</div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" data-localize>Broker</div>
+                <input class="sdpi-item-value" name="host" type="text" placeholder="IP / Host">
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" data-localize="Port">Port</div>
+                <input class="sdpi-item-value" name="port" placeholder="Port">
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" data-localize>Username</div>
+                <input class="sdpi-item-value" name="user" placeholder="Username">
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" data-localize>Password</div>
+                <input class="sdpi-item-value" name="password" placeholder="Password">
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" data-localize>Use TLS</div>
+                <select class="sdpi-item-value select" name="tls">
+                    <option value="false" data-localize>No</option>
+                    <option value="true" data-localize>Yes</option>
+                </select>
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" data-localize>Client ID</div>
+                <input class="sdpi-item-value" name="clientId" placeholder="">
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label" style="opacity: 0"></div>
+                <button class="sdpi-item-value" id="save" data-localize>Save</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="sdpi-info-label hidden" style="top: -1000" value=""></div>
+
+    <!-- Stream Deck Libs -->
+    <script src="../../../libs/js/constants.js"></script>
+    <script src="../../../libs/js/prototypes.js"></script>
+    <script src="../../../libs/js/timers.js"></script>
+    <script src="../../../libs/js/utils.js"></script>
+    <script src="../../../libs/js/events.js"></script>
+    <script src="../../../libs/js/api.js"></script>
+    <script src="../../../libs/js/property-inspector.js"></script>
+    <script src="../../../libs/js/dynamic-styles.js"></script>
+
+    <!-- Property Inspector Source -->
+    <script src="inspector.js"></script>
+</body>
+
+</html>
